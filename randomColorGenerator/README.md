@@ -1,16 +1,45 @@
-# React + Vite
+# Random Color Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React app that generates random background colors with a single button click. The entire screen updates to display the new color.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project shows how to manage dynamic styling in React using state. Each click generates a random 6-digit hexadecimal color and applies it as the page background.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Full-screen background color changes
+- Random hex color generation on button click
+- Smooth color transition with CSS duration
+- Centered "Change Color" button with clean UI
 
-## Expanding the Oxlint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- `useState` for storing the current color
+- Event handling with `onClick`
+- Inline dynamic styles (`style={{ background: color }}`)
+- JavaScript loops and random number generation
+
+## Project Structure
+
+```text
+randomColorGenerator/
+├── src/
+│   ├── App.jsx          # Color generator logic and UI
+│   └── main.jsx
+└── package.json
+```
+
+## Getting Started
+
+```bash
+cd randomColorGenerator
+npm install
+npm run dev
+```
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS

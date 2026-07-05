@@ -1,16 +1,50 @@
-# React + Vite
+# Accordion
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React accordion component that displays expandable FAQ-style questions and answers. Users can click a question to reveal or hide its answer.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project demonstrates how to build an interactive accordion UI using React state. It supports both single-selection mode (only one panel open at a time) and multi-selection mode (multiple panels can be open simultaneously).
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Expand and collapse FAQ items on click
+- Toggle between single and multi-selection modes
+- Smooth hover and transition effects
+- Responsive layout with Tailwind CSS
+- Preloaded React learning questions and answers
 
-## Expanding the Oxlint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React components and JSX
+- `useState` for managing open/closed state
+- Conditional rendering
+- Rendering lists with `map()`
+- Event handling (`onClick`)
+
+## Project Structure
+
+```text
+accordion/
+├── src/
+│   ├── App.jsx
+│   ├── componenet/
+│   │   ├── index.jsx    # Accordion component
+│   │   └── data.jsx     # FAQ data
+│   └── main.jsx
+└── package.json
+```
+
+## Getting Started
+
+```bash
+cd accordion
+npm install
+npm run dev
+```
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
